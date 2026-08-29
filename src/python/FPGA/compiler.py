@@ -1,5 +1,13 @@
+"""
+ * SPDX-License-Identifier: FLIP-v3.0
+ * Copyright (c) 2026 snolde
+ * Contact: snolde@gmail.com
+ * License: https://github.com/snolde/flip/blob/v3.0/LICENSE
+ * @FLIPCOP0: https://github.com/snolde/fifth
+"""
 from fpga import FPGA, CH552
 import os as osys
+
 
 class FPGACompiler:
     def __init__(self, cpu=None):

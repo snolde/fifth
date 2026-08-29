@@ -1,6 +1,12 @@
-SysROM ok
-0X0100:o
-61
+"""
+FPGA emulator with FIFTH instruction set
+
+SPDX-License-Identifier: FLIP-v3.0
+Copyright (c) 2026 snolde
+Contact: snolde@gmail.com
+License: https://github.com/snolde/flip/blob/v3.0/LICENSE
+@FLIPCOP0: https://github.com/snolde/fifth
+  """
 ``` code
 [00] NOP ( -- )
 [01] DRP ( w:n -- )

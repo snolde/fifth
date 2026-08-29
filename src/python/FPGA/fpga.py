@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""FPGA emulator with FIFTH instruction set """
+"""
+ * FPGA emulator with FIFTH instruction set
+ *
+ * SPDX-License-Identifier: FLIP-v3.0
+ * Copyright (c) 2026 snolde
+ * Contact: snolde@gmail.com
+ * License: https://github.com/snolde/flip/blob/v3.0/LICENSE
+ * @FLIPCOP0: https://github.com/snolde/fifth
+"""
 import os as osys
 from time import monotonic as time
 
