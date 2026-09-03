@@ -81,12 +81,12 @@ This architecture is natural to implement in hardware with power-of-two sized st
 ### Bead Stack Example
 ```text
 [31][00][01][02][03][04][...][31][00]...
-          a     b    c    d
+      a   b   c   d
 // sp: 4, depth: 4
 // execution of IFR- ( reverse indian file run) =>
         
 [31][00][01][02][03][04][...][31][00]...
-    d    a     b    c
+  d   a   b   c
 // sp: 3, depth: 4
 ```
 With power-of-two sized stacks this operation is cheap and needs no checking at all.
