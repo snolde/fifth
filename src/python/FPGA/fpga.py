@@ -332,24 +332,24 @@ class FPGA:
 			os.push((a%b)&0xFFFF)
 
 		def opcEQ():
-			"""[1A] = ( w:a (b) -- (w:a) o:flag )"""
+			"""[1A] = ( w:a b -- o:flag )"""
 			b = ws.pop()
-			a = ws.peek() if value else ws.pop()
+			a = ws.pop()
 			os.push( 1 if a == b else 0 )
 
 		def opcLT():
-			"""[1B] < ( w: a (b) -- (w:a) o:flag )"""
+			"""[1B] < ( w: a b -- o:flag )"""
 			b = ws.pop()
-			a = ws.peek() if value else ws.pop()
+			a = ws.pop()
 			a_sig = a if a < 32768 else a - 65536
 			b_sig = b if b < 32768 else b - 65536
 			result = 1 if a_sig < b_sig else 0
 			os.push(result)
 
 		def opcGT():
-			"""[1C] > ( w: a (b) -- (w:a) o:flag )"""
+			"""[1C] > ( w: a b -- o:flag )"""
 			b = ws.pop()
-			a = ws.peek() if value else ws.pop()
+			a = ws.pop()
 			a_sig = a if a < 32768 else a - 65536
 			b_sig = b if b < 32768 else b - 65536
 			result = 1 if a_sig > b_sig else 0
