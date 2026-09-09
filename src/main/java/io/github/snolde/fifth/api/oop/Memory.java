@@ -6,7 +6,7 @@
  * @FLIPCOP0: https://github.com/snolde/fifth
  */
 
-package io.github.snolde.fifth.api;
+package io.github.snolde.fifth.api.oop;
 
 public interface Memory {
 }

@@ -6,11 +6,25 @@
  * @FLIPCOP0: https://github.com/snolde/fifth
  */
 
-package io.github.snolde.fifth.simulation;
+package io.github.snolde.fifth.emulation;
 
-import io.github.snolde.fifth.api.*;
+import io.github.snolde.fifth.api.VM;
+import io.github.snolde.fifth.api.oop.*;
 
 public class SimpleVM implements VM, TwinStack, Threader, ALU, Memory {
+    private final TwinStack stack;
+    private final Threader threader;
+    private final ALU alu;
+    private final Memory mem;
+
+
+    public SimpleVM() {
+        this.stack = this;
+        this.threader = this;
+        this.alu = this;
+        this.mem = this;
+    }
+
     /// @param value int
     /// @param fs    boolean
     @Override

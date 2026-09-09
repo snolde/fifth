@@ -10,7 +10,7 @@ The architecture considers two principal actors: the MACHINE and the DICT. The c
 
 For those who know FORTH, the principal changes are, that FIFTH emancipates the return stack to a flow stack, facilitating dataflow paradigms in programming by stackmuxing. Primitive opcodes, specifically stack options come with muxbits which makes them executable on either stack or even cross stack, and configuration bits  that allow to build multi-primitive cells, which conditionally execute and flow.
 
-FIFTH is not a programming language. It is an infrastructure with a common syntactic and semantic basis to create task and domain specific languages from there. In order to achieve this, it works with a maximum of 64 primitives including reserved opcodes for individual hardware solutions with heavy used opcodes directly implemented in the MACHINE. 
+FIFTH is more than a programming language. It is an infrastructure with a common syntactic and semantic basis to create task and domain specific languages from there. In order to achieve this, it works with a maximum of 64 primitives including reserved opcodes for individual hardware solutions with heavy used opcodes directly implemented in the MACHINE. 
 
 ----
 

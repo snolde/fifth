@@ -6,7 +6,4 @@
  * @FLIPCOP0: https://github.com/snolde/fifth
  */
 
-package io.github.snolde.fifth.api;
-
-public interface Threader {
-}
+package io.github.snolde.fifth.api.oop;
