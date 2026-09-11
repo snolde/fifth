@@ -75,7 +75,7 @@ On the data side the tag bits facilitate the code to handle the tagged data acco
 
 
 ## The Twin Rotating Stack
-Unlike the Fifth16 emulation added as reference and instructive PoC, Fifth32 implemenents a pair of rotating buffers - I call them bead stacks - which allow performant transfer of TOS to the bottom of the stack (BOS) and BOS to top. While the stack is generally treated as a LIFO stack, rolling values to and from the bottom, reducing the need for >R/R> shenanigans.
+Unlike the Fifth16 emulation added as reference and instructive PoC, Fifth32 implements a pair of rotating buffers - I call them bead stacks - which allow performant transfer of TOS to the bottom of the stack (BOS) and BOS to top. While the stack is generally treated as a LIFO stack, rolling values to and from the bottom reduces the need for >R/R> shenanigans.
 This architecture is natural to implement in hardware with power-of-two sized stacks and expands programmers options significantly.
 
 ### Bead Stack Example
@@ -106,8 +106,8 @@ The final assignation of mandatory core words is still a work in progress, the f
 [07] UNDR ( w:a b -- w:a a b )
 [08] UPOP ( -- w:a ) unpop
 [09] NIP ( w:a b -- o:b )
-[0A] IFR ( w0:a -- o:a )
-[0B] IFR- ( w:a -- o0:a )
+[0A] IFR ( w0:a -- o:a ) // BOS to TOS 
+[0B] IFR- ( w:a -- o0:a ) // TOS to BOS
 [0C] ! ( w:cell o:a -- )
 [0D] @ ( w:a -- o:val )
 [0E] IPS ( -- [f:ip] a ) or skip
@@ -126,23 +126,21 @@ The final assignation of mandatory core words is still a work in progress, the f
 [1B] = ( w:a b -- o:flag )
 [1C] < ( w: a b -- o:flag )
 [1D] > ( w: a b -- o:flag )
-[1E]
-[1F]
-// Upper range includes multi byte opcodes still to be
-//defined or reserved for task specific implementation 
-[20]
-[21]
-[22]
-[23]
-[24]
+[1E] DOS ( -- o:wsdepth ) // depth of stack
+[1F] .
+[20] & ( w: a b -- o:a&b )
+[21] | ( w: a b -- o:a|b )
+[22] ^ ( w: a b -- o:a^b )
+[23] << ( w: n cnt -- o: n<<cnt )
+[24] >> ( w: n cnt -- o:n>>cnt )
 [25]
-[26] & ( w: a (b) -- o:a&b )
-[27] | ( w: a (b) -- o:a|b )
-[28] ^ ( w:a (b) -- o:a^b )
-[29] << ( w: n (cnt) -- o: n<<cnt ) F
-[2A] >> ( w: n (cnt) -- o:n>>cnt ) F
-[2B]
-[2C]
+[26]
+[27]
+[28] #& ( w: a (b) -- o:a&b )
+[29] #| ( w: a (b) -- o:a|b )
+[2A] #^ ( w:a (b) -- o:a^b )
+[2B] #<< ( w: n (cnt) -- o: n<<cnt ) F
+[2C] #>> ( w: n (cnt) -- o:n>>cnt ) F
 [2D]
 [2E] 
 [2F]
