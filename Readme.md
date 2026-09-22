@@ -1,5 +1,5 @@
-# FIFTH - a computing infrastructure 
-
+# FIFTH - a computing infrastructure
+*not  affiliated with [fifthlang/fifthlang](https://github.com/fifthlang/fifthlang) (a .NET knowledge graph language)*
 ## Outline
 
 FIFTH is a project to develop a holistic building environment for alternative computing - a synergy of hard and software. 
@@ -9,6 +9,8 @@ It is inspired by and heavily based on FORTH, but aims to take the philosophy a 
 The architecture considers two principal actors: the MACHINE and the DICT. The combination of the two creates a functional unit able to execute tasks, and in a fractal view can be deployed in architecture in a variety of roles from an independent task to a full computing system.
 
 For those who know FORTH, the principal changes are, that FIFTH emancipates the return stack to a flow stack, facilitating dataflow paradigms in programming by stackmuxing. Primitive opcodes, specifically stack options come with muxbits which makes them executable on either stack or even cross stack, and configuration bits  that allow to build multi-primitive cells, which conditionally execute and flow.
+The core concept is shown in the fifth16 python emulation, but needs to be carefully reviewed
+to optimize its performance, flexibility and understandability with up to three opcodes and 4 configuration bits.
 
 FIFTH is more than a programming language. It is an infrastructure with a common syntactic and semantic basis to create task and domain specific languages from there. In order to achieve this, it works with a maximum of 64 primitives including reserved opcodes for individual hardware solutions with heavy used opcodes directly implemented in the MACHINE. 
 
@@ -127,25 +129,25 @@ The final assignation of mandatory core words is still a work in progress, the f
 [1C] < ( w: a b -- o:flag )
 [1D] > ( w: a b -- o:flag )
 [1E] DOS ( -- o:wsdepth ) // depth of stack
-[1F] .
+[1F] 
 [20] & ( w: a b -- o:a&b )
 [21] | ( w: a b -- o:a|b )
 [22] ^ ( w: a b -- o:a^b )
 [23] << ( w: n cnt -- o: n<<cnt )
 [24] >> ( w: n cnt -- o:n>>cnt )
-[25]
+[25] . // contextual typed output
 [26]
 [27]
-[28] #& ( w: a (b) -- o:a&b )
-[29] #| ( w: a (b) -- o:a|b )
-[2A] #^ ( w:a (b) -- o:a^b )
-[2B] #<< ( w: n (cnt) -- o: n<<cnt ) F
-[2C] #>> ( w: n (cnt) -- o:n>>cnt ) F
+[28]
+[29]
+[2A]
+[2B]
+[2C]
 [2D]
 [2E] 
 [2F]
-[30] IP@ ( [w:a] -- w:ip [w:a])
-[31] IP! ( w:ip -- ) / (--)ip += sval
+[30]
+[31]
 [32]
 [33]
 [34]
@@ -153,11 +155,11 @@ The final assignation of mandatory core words is still a work in progress, the f
 [36]
 [37]
 [38]
-[39] XSM ( w:a o:b -- wo:a +- b )
-[3A] TNC! ( w:a b o:c -- w:a b )
-[3B] TN+ ( * -- * ) modifies tos/nos
-[3C] TNC@ ( w: a b -- w: a b o:c+?)
-[3D] WLK ( w:a1 w:a2 -- w:a1+1 w:a2+1 o:fl )
-[3E] MOV ( w:src w:dst o:len -- )
+[39]
+[3A]
+[3B]
+[3C]
+[3D]
+[3E]
 [3F]
 
