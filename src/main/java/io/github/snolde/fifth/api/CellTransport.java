@@ -8,7 +8,9 @@
 
 package io.github.snolde.fifth.api;
 
-public interface VM extends CellTransport, Runnable {
+public interface CellTransport {
+
+    void send(int cell, int channel);
+
+    void subscribe(int channel, CellTransport consumer);
 }
-
-

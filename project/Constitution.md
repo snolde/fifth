@@ -26,8 +26,8 @@
    I don't expect everyone to share this mindset, but I commit to it and am happy
    about everyone able to embrace the concept.
 
-   For this reason, FIFTH is and will stay open source under the [FLIPv3.0 license]([https://github.com/snolde/fifth/LICENSE](https://github.com/snolde/flip/blob/v3.0/LICENSE)), and
-   FORTH users and practitioners are invited, but not pushed to adopt the open source culture when
+   For this reason, FIFTH is and will stay open source under the [FLIPv3.0 license](https://github.com/snolde/flip/blob/v3.0/LICENSE), and
+   FIFTH users and practitioners are invited, but not pushed to adopt the open source culture when
    building business with the language and infrastructure.
 
    Important to understand is, that open source does not prevent monetizing your work.

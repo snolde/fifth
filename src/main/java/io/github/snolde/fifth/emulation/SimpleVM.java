@@ -8,6 +8,7 @@
 
 package io.github.snolde.fifth.emulation;
 
+import io.github.snolde.fifth.api.CellTransport;
 import io.github.snolde.fifth.api.VM;
 import io.github.snolde.fifth.api.oop.*;
 
@@ -71,6 +72,20 @@ public class SimpleVM implements VM, TwinStack, Threader, ALU, Memory {
     ///
     @Override
     public void run() {
+
+    }
+
+    /// @param cell
+    /// @param channel
+    @Override
+    public void send(int cell, int channel) {
+
+    }
+
+    /// @param channel
+    /// @param consumer
+    @Override
+    public void subscribe(int channel, CellTransport consumer) {
 
     }
 }
