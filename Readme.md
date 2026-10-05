@@ -17,10 +17,10 @@ FIFTH is more than a programming language. It is an infrastructure with a common
 ----
 
 ## The MACHINE
-The MACHINE in FIFTH in it's minimal definition is a rotating twin-stack (like a queue), a threader and ALU plus memory and an IO device to communicate with the environment. Unless implemented in the reserved opcodes, all hardware access is considered to be memory-mapped. To be functional, a MACHINE has a bios with the sole purpose to load, save and transmit dictionaries and providing mapping to access hardware on low level. This also implies that a MACHINE does not need an OS, if its task is narrow and defined, it can just run with bios and a program.
+The MACHINE in FIFTH in its minimal definition is a rotating twin-stack (like a queue), a threader and ALU plus memory and an IO device to communicate with the environment. Unless implemented in the reserved opcodes, all hardware access is considered to be memory-mapped. To be functional, a MACHINE has a bios with the sole purpose to load, save and transmit dictionaries and providing mapping to access hardware on low level. This also implies that a MACHINE does not need an OS, if its task is narrow and defined, it can just run with bios and a program.
 
 ## The DICTIONARY 
-Dictionaries in FIFTH unlike in FORTH are separated in a standalone binary DICT and a referencing descriptive catalog (HRCT - human readable catalog). This allows to avoid dragging along verbose documentation in production MACHINEs. A special form of DICT is the installer, which is specified as an executable dictionary that appends itself to the dictionary space of the MACHINE and forgets the configuration part afterwards.
+Dictionaries in FIFTH unlike in FORTH are separated in a standalone binary DICT and a referencing descriptive catalog (HRCT - human-readable catalog). This allows to avoid dragging along verbose documentation in production MACHINES. A special form of DICT is the installer, which is specified as an executable dictionary that appends itself to the dictionary space of the MACHINE and forgets the configuration part afterward.
 
 ```mermaid
     flowchart LR
@@ -66,14 +66,14 @@ Dictionaries in FIFTH unlike in FORTH are separated in a standalone binary DICT 
 ## Tagged Cells
 The here developed implementation of FIFTH - Fifth32 - uses 32bit cells with 4 tag bits and 28 payload bits.
 The tag bits allow the threader and stack to discriminate between executable code and data, and thus facilitate Dataflow paradigms in development.
-On the execution side it permits to decide if a cell constains instructions to be executed or a location to flow to, along with execution context hints. Since consequent cell addressing is used in FIFTH, that allows  direct access to a GB of memory without paging in a single cell.
+On the execution side it permits to decide if a cell contains instructions to be executed or a location to flow to, along with execution context hints. Since consequent cell addressing is used in FIFTH, that allows  direct access to a GB of memory without paging in a single cell.
 On the data side the tag bits facilitate the code to handle the tagged data accordingly, allowing a form of type hinting. This gives a cell a range of -134,217,728 to 134,217,727 as signed integer along with the possibility to identify multi-cell data from the tag bit hints.
 
-| bit | 0 | 1 |
-| ---- | ---- | ---- |
-| 31 | data cell | executable cell |
-| 30 | value cell | reference cell |
-| 28,29  | type hints | execution and flow options |
+| bit   | 0          | 1                          |
+|-------|------------|----------------------------|
+| 31    | data cell  | executable cell            |
+| 30    | value cell | reference cell             |
+| 28,29 | type hints | execution and flow options |
 
 
 ## The Twin Rotating Stack
@@ -110,14 +110,14 @@ The final assignation of mandatory core words is still a work in progress, the f
 [09] NIP ( w:a b -- o:b )
 [0A] IFR ( w0:a -- o:a ) // BOS to TOS 
 [0B] IFR- ( w:a -- o0:a ) // TOS to BOS
-[0C] ! ( w:cell o:a -- )
-[0D] @ ( w:a -- o:val )
-[0E] IPS ( -- [f:ip] a ) or skip
+[0E] STAB ( w:b ... o:t -- w:t ... o:b ) 
 [0F] PICK ( w:depth -- o:v )
-[10] 0= ( w:n -- o:flag )
+[0E] ! ( w:cell o:a -- )
+[0F] @ ( w:a -- o:val )
+[10] 0= ( w:a -- o:val )
 [11] 0< ( w:n -- o:flag )
-[12] !0 ( w:n -- o:n)
-[13] NG ( w:n -- o:-n )
+[12] !0 ( w:n -- o:flag )
+[13] NEG ( w:n -- o:-n )
 [14] ~ ( w:n -- o:~n )
 [15] + ( w:a b -- o:a+b )
 [16] - ( w:a b -- o:a-b )
@@ -128,8 +128,8 @@ The final assignation of mandatory core words is still a work in progress, the f
 [1B] = ( w:a b -- o:flag )
 [1C] < ( w: a b -- o:flag )
 [1D] > ( w: a b -- o:flag )
-[1E] DOS ( -- o:wsdepth ) // depth of stack
-[1F] 
+[1E] IPS ( -- [f:ip] a ) or skip
+[1F] DOS ( -- o:wsdepth ) // depth of stack
 [20] & ( w: a b -- o:a&b )
 [21] | ( w: a b -- o:a|b )
 [22] ^ ( w: a b -- o:a^b )
