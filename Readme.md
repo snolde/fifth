@@ -10,7 +10,11 @@ It is inspired by and heavily based on FORTH, but aims to take the philosophy a 
 
 The architecture considers two principal actors: the MACHINE and the DICT. The combination of the two creates a functional unit able to execute tasks, and in a fractal view can be deployed in architecture in a variety of roles from an independent task to a full computing system.
 
-For those who know FORTH, the principal changes are, that FIFTH emancipates the return stack to a flow stack, facilitating dataflow paradigms in programming by stackmuxing. Primitive opcodes, specifically stack options come with muxbits which makes them executable on either stack or even cross stack, and configuration bits  that allow to build multi-primitive cells, which conditionally execute and flow.
+For those who know FORTH, the language will feel familiar, but with some critical evolutions. FIFTH emancipates the return stack to a flow stack, facilitating dataflow paradigms in programming by stackmuxing. The rotating buffer architecture
+synergizes with hardware and makes the frequent stack-ops computationally cheap. End-to-end rotation significantly increases the workspace at negligible cost. Primitive opcodes - including stack operations - come with muxbits which make them executable on either stack or even cross stack. Configuration bits  allow to build multi-primitive cells which conditionally execute and flow. Finally, tagged cells
+discriminating between executable and data cells, as well as payloads and references as well
+as allowing type categories expand the flexibility even further.
+
 The core concept is shown in the fifth16 python emulation, but needs to be carefully reviewed
 to optimize its performance, flexibility and understandability with up to three opcodes and 4 configuration bits.
 
