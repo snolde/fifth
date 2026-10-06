@@ -1,6 +1,8 @@
 # Glossary
 ## A
 ## B
+- ### Bead stack
+    Stack implemented as rotating buffer with front and back access, visualized like a prayer bead chain.
 - ### BOS
     Bottom of Stack
 ## C
