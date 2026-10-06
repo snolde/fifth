@@ -1,5 +1,7 @@
 # FIFTH - a computing infrastructure
 *not  affiliated with [fifthlang/fifthlang](https://github.com/fifthlang/fifthlang) (a .NET knowledge graph language)*
+
+**FIFTH Community Startup**: read the [Manifest](Manifest.md) and [Ko-Fi.com/snolde](https://ko-fi.com/post/FIFTH-Language-Infrastructure-V0L327M67A) for details.
 ## Outline
 
 FIFTH is a project to develop a holistic building environment for alternative computing - a synergy of hard and software. 

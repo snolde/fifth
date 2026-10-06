@@ -66,7 +66,7 @@ This starts with a transparent commitment to a business philosophy in the form o
    There will always be a free, fully implemented toolchain with complete core dictionaries 
    available under an attribution-only license.
     
-   Additionally there will be a commercial license for the FIFTH IDE (FIDE) -
+   Additionally, there will be a commercial license for the FIFTH IDE (FIDE) -
    allowing packaging of VMs and core dictionaries with software creator's products  or 
    embedding them into software without affecting the license of the product.
    Licenses are designed to be perpetual and affordable.
