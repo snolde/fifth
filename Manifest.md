@@ -1,21 +1,27 @@
 # The FIFTH Project Manifest
+## TL;DR
+The FIFTH project needs funding. Work needs to be done, time has to be paid for.
+If you read the [Readme](Readme.md) and want this to live, you can:
+- Star the repo and watch the progress
+- Visit [ko-fi.com/snolde](https://ko-fi.com/snolde), ANY donation, purchase or membership pays work here.
+- Visit the [Membership](https://ko-fi.com/snolde/tiers) and become part of the FIFTH economy as Purveyor or Ambassador
+- Want to know more about the value proposition or the business model, just read on.
+
+Commited funding through membership gives you something back, Purveyor and Ambassador funding give you protected status
+as official distributors for the commercial side, creating work opportunities for yourself.
+FIFTH economy is different, all income through licensing pays work up-front, no rent-seeking or minting considered.
+Distributors sell at retail and buy at distributor conditions.
+
+Any questions about why or how this wors as it does or curiosity about the philosophy behind it, that is why the Manifest exists.
+
+# Beyond the Nutshell
 
 This manifest transparently explains in holistic details the goals of this work,
 its scope, its business model, its social role and its funding principles.
 
 The reason it exists is this: Instead of only pursuing a valuable project in computing science
 here, I also intend to make this a showcase for Ethical Engineering (EE) and positive business
-principles for a healthier economy.
-
-My theory of sustainable economy through creation of resilient businesses with holistic
-Ethical Engineering postulates, that the business health is principally based on a single
-most valuable asset: Trust.
-
-Thorough review of the needs of the 4 stakeholder groups - society, operators, users and leaders -
-allows engineering of a trust-building business constitution.
-
-Mutual trust is the most important ingredient for stable long-term business relationships
-and should be treated accordingly.
+principles for a healthier economy. The keystone here is Trust.
 
 An irreducible prerequisite for trust is transparency. As long as full transparency is offered,
 unaligned or even contradicting ethics can coexist. Trust grounded on transparency also
