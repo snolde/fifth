@@ -12,17 +12,20 @@ as official distributors for the commercial side, creating work opportunities fo
 FIFTH economy is different, all income through licensing pays work up-front, no rent-seeking or minting considered.
 Distributors sell at retail and buy at distributor conditions.
 
-Any questions about why or how this works as it does or curiosity about the philosophy behind it, that is why the Manifest exists.
+Any questions about why or how this wors as it does or curiosity about the philosophy behind it, that is why the Manifest exists.
 
 # Beyond the Nutshell
 
 This manifest transparently explains in holistic details the goals of this work,
 its scope, its business model, its social role and its funding principles.
 
-Besides only pursuing a valuable project in computing science
-here, I also intend to make this a showcase for Ethical Business Engineering (EE). The keystone metric for business health in EE
-is Trust on the SOUL matrix as described [here](https://ko-fi.com/s/7e328d92a2), for those curious about the framework.
+The reason it exists is this: Instead of only pursuing a valuable project in computing science
+here, I also intend to make this a showcase for Ethical Engineering (EE) and positive business
+principles for a healthier economy. The keystone here is Trust.
 
+An irreducible prerequisite for trust is transparency. As long as full transparency is offered,
+unaligned or even contradicting ethics can coexist. Trust grounded on transparency also
+facilitates alignment of goals and productive environment.
 
 ## What FIFTH is about
 In the [README](Readme.md) you might already have read about characteristics of the FIFTH language
@@ -41,7 +44,7 @@ This is where I intend to close the gap.
 ### Where FIFTH fits:
 - **Embedded systems**, where the abstraction tax is prohibitive and machines have to be touched directly.
 - **Task-specific languages**, where domains need their own vocabulary, not a general-purpose framework.
-- **Hardware implementations**, where the language lives in silicon, instead of on a stack of abstractions.
+- **Hardware implementations**, where the language lives in silicon, not on a stack of abstractions.
 - **Distributed systems**, Swarm computing, where independent subsystems need to coordinate without a central monolith.
 - **Educational contexts**, where we raise engineering minds from the very foundation, where the machine is the subject, not a distraction.
 - **Long-lived toolchains**, where ownership and transparency matter more than velocity of feature additions for their own sake.
@@ -56,7 +59,6 @@ toolchain and hardware for the price of a pocket calculator.
 ## FIFTH as a Business
 Originally I started FIFTH out of curiosity: "What if we take Chuck Moore's dream of Forth and close the gap between hardware and software? What if we use technological
 advances of the 21st century and create performance, simplicity and directness of control accessible for everyone?"
-
 Initially a pet project, the vision grew into something bigger.
 As a natural fit for ethical engineering thanks to the potential to generate value opportunities, I decided to link my brainchild to a sustainable business concept and microeconomy based on EE propositions.
 This starts with transparent commitment to a business philosophy (constitution).
@@ -95,8 +97,8 @@ Now for those considering to funding as Purveyors or Ambassadors the constitutio
    as published in a yearly Numerical Addendum. The distributor price is capped at one third
    of this cost rate, likewise declared in the addendum.
 
-   The license fee's purpose is to finance the creation, improvement and maintenance
-   of the essential tool, not post-hoc rent-seeking or heli-skiing in Norway.
+   The license fee's purpose is to finance the creation and maintenance
+   of the essential tool, not heli-skiing in Norway.
 2) #### Open Source
    In 4 decades of code craft I have invariably delivered my code as open source,
    because I believe in efficiency of collaboration. Competitivity is a motivator,
