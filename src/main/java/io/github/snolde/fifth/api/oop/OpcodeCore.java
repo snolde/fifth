@@ -13,28 +13,28 @@ public interface OpcodeCore {
     /// NOP ( w:a -- o:a ) NOP/F>/F</WAIT
     void opcode00();
 
-    /// DROP (  --  )
+    /// DROP ( w@o:c --  ) o=0 TOS, o=1 BOS
     void opcode01();
 
-    /// DUP (  --  )
+    /// DUP ( w:c -- w:c o:c )
     void opcode02();
 
     /// SWAP (  --  )
     void opcode03();
 
-    /// OVER (  --  )
+    /// OVER ( w:c1 w:c2 -- w:c1 w:c2 o:c1 )
     void opcode04();
 
-    /// ROT (  --  )
+    /// ROT ( w:c1 w:c2 w:c3 -- w:c2 w:c3, o:c1 )
     void opcode05();
 
-    /// ROT- (  --  )
+    /// ROT- ( w:c1 w:c2 w:c3, o:c4 o:c5 -- o:c3 w:c1 w:c2, o:c4 o:c5)
     void opcode06();
 
-    /// UNDR (  --  )
+    /// UNDR (  w:c1 w:c2, o:c3 -- w:c1 o:c1 w:c2, o:c3 )
     void opcode07();
 
-    /// UPOP (  --  )
+    /// UPOP (  -- w@o:? ) unpop, o=0 TOS, o=1 BOS
     void opcode08();
 
     /// NIP (  --  )
@@ -46,7 +46,7 @@ public interface OpcodeCore {
     /// IFR- (  --  ) TOS -> BOS
     void opcode0B();
 
-    /// STAB ( w:b ... o:t -- w:t ... o:b ) switch tos and bos
+    /// STAB ( o:b ... w:t -- o:t ... w:b ) switch tos and bos
     void opcode0C();
 
     /// PICK ( w:depth -- o:v )
