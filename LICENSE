@@ -1,21 +1,22 @@
-FLIP LICENSE v3.0 — For Less Ignorant People
+FLIP LICENSE v3.1 — For Less Ignorant People
 (And for the lawyers who have to read it)
 
-SPDX-LICENSE-IDENTIFIER: FLIP-3.0 (provisional - not yet registered)
+SPDX-LICENSE-IDENTIFIER: FLIP-3.1 (provisional - not yet registered)
 
 --- PREAMBLE ---
 
 This license exists because software licensing has become a weapon,
-not a shield. The goal is simple:
+not a shield. The goal is transparency and collaboration:
 
 1. Use this code. Freely. Even in closed-source products.
-2. Ensure that the required attribution and copyright notices are preserved and easily accessible.
-3. If you train an AI on this code and it memorizes parts of it,
+2. Ensure that the required attribution and copyright notices are preserved and easily
+   accessible, to make the chain-of-provenance documentation available.
+3. CoP intends to allow users and developers to make code traceable back to the
+   original authors wherever this is beneficial. Use it wisely.
+4. If you train an AI on this code and it memorizes parts of it,
    don't pretend the AI wrote it. Credit the original.
 
-No lawyer-ese. No traps. Just mutual respect.
-
-If you can't handle that, don't use the code.
+If you see that as a huge entanglement, don't use the code.
 
 --- TERMS ---
 
@@ -25,19 +26,18 @@ copy, modify, merge, publish, distribute, and sublicense the Software, subject
 to the following conditions:
 
 1. ATTRIBUTION
-   The above copyright notice and this permission notice shall be included in
-   all copies or substantial portions of the Software, including in
-   documentation, end-user licenses, and "about" dialogs of any compiled or
-   distributed product that uses the Software. You shall inform the author of
-   any release of software utilizing this code via the provided contact email,
-   if it is included in the notice.
+    The above copyright notice and this permission notice shall be included in
+    at least one accessible location chosen by the licensee, such as documentation,
+    end-user licenses, a source file header, a bundled notice file or an "about"
+    section of the shipped product. You are encouraged to inform the author of
+    a first release of a new software utilizing this code via the provided contact
+    email, if one is given in the notice.
 
 1b. ATTRIBUTION SURVIVAL
     Any derivative work, modification, translation, or adaptation of this
-    Software (collectively, "Derivative Works") must include the same
-    attribution notice as required in Section 1. This requirement applies
-    to all Derivative Works, regardless of the extent of modification,
-    and must be passed on to any recipients of such Derivative Works.
+    Software must include the same attribution notice as required in Section 1.
+    This requirement applies to all Derivative Works and must be passed on to
+    any recipients of such Derivative Works.
 
     For the purposes of this license, a Derivative Work includes any work
     that contains, incorporates, or is based upon the Software, in whole
@@ -96,7 +96,7 @@ to the following conditions:
    from this Software), then that output MUST include:
 
    a) Clear attribution to the original author(s)
-   b) A reference to this license (FLIP License v3.0)
+   b) A reference to this license (FLIP License v3.1)
    c) A functional hyperlink to the source repository, or the full URL if a
       hyperlink is not possible.
 
@@ -111,10 +111,10 @@ to the following conditions:
 To apply this license to your work, replace the bracketed information
 and include this notice in your source files:
 
-// SPDX-License-Identifier: FLIP-3.0
+// SPDX-License-Identifier: FLIP-3.1 (provisional)
 // Copyright (c) [year] [your name or organization]
 // Contact: your email contact (optional)
-// License: [URL to the canonical FLIP License v3.0 text]
+// License: [URL to the canonical FLIP License v3.1 text]
 // FLIPCOP0: [URL to the origin repository of the licensed Software]
 
 Optional: Add a donation or support link after the license URL.

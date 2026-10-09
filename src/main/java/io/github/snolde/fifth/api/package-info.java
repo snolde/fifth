@@ -1,8 +1,8 @@
 /**
- * SPDX-License-Identifier: FLIP-v3.0
+ * SPDX-License-Identifier: FLIP-v3.1
  * Copyright (c) 2026 snolde
  * Contact: snolde@gmail.com
- * License: <a href="https://github.com/snolde/flip/blob/v3.0/LICENSE">FLIP v3.0</a>
+ * License: <a href="https://github.com/snolde/flip/blob/v3.1/LICENSE">FLIP v3.1</a>
  * @FLIPCOP0: https://github.com/snolde/fifth
  *
  * <p>This package contains the interface and handler contracts for standardized FIFTH
